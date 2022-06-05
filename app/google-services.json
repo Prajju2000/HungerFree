@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518951735900",
+    "project_id": "hungerfree-c6a3b",
+    "storage_bucket": "hungerfree-c6a3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518951735900:android:dd78e443777737b6644c99",
+        "android_client_info": {
+          "package_name": "com.example.aahaarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518951735900-a38bo3q5smjq46oe27f7dld1cehvp67a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUu8kEAol9Vq7mGKJcS3LPLqtpm04PU5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518951735900-a38bo3q5smjq46oe27f7dld1cehvp67a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
