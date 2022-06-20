@@ -56,20 +56,21 @@ public class History extends AppCompatActivity {
                                 if (document.contains("name") && document.contains("description") && document.contains("user type") && document.contains("userid")) {
 
                                     String name = (String) document.get("name");
-                                    String type = (String) document.get("user type");
-                                    String description = (String) document.get("description");
-                                    String Userid = (String) document.get("userid");
+//                                    String type = (String) document.get("user type");
+//                                    String phone = (String) document.get("phone");
+//                                    String description = (String) document.get("description");
+                                  String Userid = (String) document.get("userid");
                                     String userID = fAuth.getCurrentUser().getUid();
-                                    Timestamp ts = (Timestamp) document.get("timestamp");
+//                                    Timestamp ts = (Timestamp) document.get("timestamp");
                                     //String dateandtime=String.valueOf(ts);
-                                    String dateandtime=String.valueOf(ts.toDate());
+                                    //String dateandtime=String.valueOf(ts.toDate());
                                     //String dateandtime = ts.toString();
 
                                     if(Userid.equals(userID)) {
-                                        data += "Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\nDate & Time: " + dateandtime + "\n\n";
-                                        //data += "Name: " + name + "\nUser Type: " + type + "\nDescription: " + description + "\n";
+                                        //data += "Name: " + name + "\nUser Type: " + type +"\nPhone: " + phone + "\nDescription: " + description + "\nDate & Time: " + dateandtime + "\n\n";
+                                        data += "Name: " + name + "\nUser Type: "  + "\n";
                                     }
-                                    textViewData.setText(data);
+                                    textViewData.setText("data");
                                 }
                             }
                             //textViewData.setText(data);

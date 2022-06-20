@@ -35,7 +35,8 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
     @Override
     public void onBindViewHolder(@NonNull myviewholder holder, int position) {
         holder.tname.setText(datalist.get(position).getName());
-        holder.ttype.setText(datalist.get(position).getType());
+       holder.tphone.setText(datalist.get(position).getPhone());
+        //holder.ttype.setText(datalist.get(position).getType());
         holder.tdescription.setText(datalist.get(position).getDescription());
     }
 
@@ -51,10 +52,11 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
 
     class myviewholder extends RecyclerView.ViewHolder
     {
-        TextView tname,ttype,tdescription;
+        TextView tname,tphone,ttype,tdescription;
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             tname = itemView.findViewById(R.id.name);
+            tphone = itemView.findViewById(R.id.phone);
             ttype = itemView.findViewById(R.id.type);
             tdescription = itemView.findViewById(R.id.description);
         }
